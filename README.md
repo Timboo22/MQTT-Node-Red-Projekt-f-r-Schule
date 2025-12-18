@@ -44,8 +44,16 @@ MQTT Broker Mosquitto -> Raspberry-Pi Lan:
     Als payload wählt man raw oder text und schreibt eine Nachricht.
     Dann klicken auf publish.
     Wenn alles erfolgreich ist sieht man jetzt links im Hierachiebaum unter ags -> projekt -> test die Nachricht  
-    
+
+4: 
+
+     
 
 Entwicklerdokumentation:
 
+Zwischenstand:
+
+    aufgabe 4 von 14 
+    doku fortschritt 3 von 4 
+    
     
