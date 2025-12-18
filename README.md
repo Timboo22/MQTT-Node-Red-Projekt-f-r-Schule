@@ -26,7 +26,24 @@ MQTT Broker Mosquitto -> Raspberry-Pi Lan:
     Dafür haben wir Windos+r gedrückt und Services.msc eingegeben. 
     Dann haben wir den Mosqitto Broker gesucht und diesen neu gestartet damit unsere Config änderung damit sie übernommen werden. 
     Als letzten schritt haben wir die Windows firewale angepasst so das unser enternes Gerät den erreichen können, dafür haben wir den Windows defender firewal mit erweiterter sicherheit gestartet und in den eingehenden regeln eine neue Regel erstellt.
-    
+
+    Jetzt prüfen wir mit dem MQTT-Explorer ob unser MQTT Broker ordnungsgemäß funktioniert.
+    Dafür haben wir den MQTT-Explorer heruntergeladen und die Standart Instalation ausgeführt.
+
+3.1: 
+
+    Wir haben den Clietn mit unseren Windows Broker verbunden und haben folgende sachen eingegeben
+    Host: localHost
+    Port: 1883
+    Protokoll: mqtt://
+    Username/Passwort: haben wir leer gelassen das wir allow_anomynus true gesetzt haben
+
+    Bei Erfolg kommt folgende Übersicht: "Bild hinzufügen"
+
+    Als nächstes muss Publish-nachricht getest werden, dafür geht man im MQTT-Explorer auf das Feld publish dort gibt man im Feld topic ein test pfad ein bsp.: ags/projekt/test
+    Als payload wählt man raw oder text und schreibt eine Nachricht.
+    Dann klicken auf publish.
+    Wenn alles erfolgreich ist sieht man jetzt links im Hierachiebaum unter ags -> projekt -> test die Nachricht  
     
 
 Entwicklerdokumentation:
